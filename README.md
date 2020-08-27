@@ -86,8 +86,8 @@ This means that the default frequency integer value of 32768 specifies a frequen
 by entering a value of 703.
 
 #### Left/Right (LR)
-Left Range: -,L
-Right Range: -,R
+* Left Range: -,L
+* Right Range: -,R
 
 By default, each channel is turned off by having a "-" for both the left and
 right speaker channels. You can enable output to a speaker channel by clicking
@@ -104,7 +104,7 @@ Range: 0 to 63
 Controls the volume of the waveform output to all selected speaker channels.
 A value of zero effectively turns off that voice, and 63 is the maximum
 possible volume. Actual volumes heard in the speakers will be dependent on
-amplification and fading of stereo audio signal coming from the X16 or emulation host.
+amplification and fading of the stereo audio signal coming from the X16 or emulation host.
 
 #### Waveform Type (WAVEFORM)
 Range: PULSE, SAWTOOTH, TRIANGLE, NOISE
