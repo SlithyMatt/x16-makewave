@@ -23,8 +23,6 @@ num_string_len: .byte 0
 bcd_value: .dword 0
 bin_value: .word 0
 
-csv_buffer: .res (6+2+3+2+3)*4
-
 csv_fn: .byte "psg.csv"
 end_csv_fn:
 
@@ -152,6 +150,8 @@ start:
    lda #128
    sta VERA_dc_hscale
    sta VERA_dc_vscale
+   lda #BASIC_ROM_BANK
+   sta ROM_BANK
    rts
 
 init_psg:
@@ -860,3 +860,6 @@ bin2str: ; Input: bin_value - binary value
    bne @space_loop
 @return:
    rts
+
+.org $2020
+csv_buffer: .res (6+2+3+2+3)*4
